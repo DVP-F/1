@@ -1,0 +1,54 @@
+:root{
+    --main_bg-colour: #000;
+    --main_text-colour: #fff;
+}
+* {
+    margin: 0px; padding: 0px;
+    background: var(--main_bg-colour);
+}
+
+/* Styling the first parallax's height, width and background color */
+.parallax-1 {
+    width: 100%;
+    height: 600px;
+    background: url('../assets/media/neon1.jpg') fixed;
+    background-size: 100% 100%;
+}
+
+/* Styling the title of first parallax */
+.parallax-1 h2 {
+    margin: auto;
+    position: relative;
+    left: 500x;
+    top: 300px;
+    width: 250px;
+    height: 32px;
+    padding: 10px;
+    background-color: var(--main_bg-colour);
+    color: var(--main_text-colour);
+    text-align: center;
+}
+
+/* Styling the second parallax's height, width and background color */
+.parallax-2 {
+    width: 100%;
+    height: 600px;
+    background: url('../assets/media/neon2.jpg') fixed;
+    background-size: 100% auto;
+}
+
+/* Styling the title of second parallax */
+.parallax-2 h2 {
+    margin: auto;
+    position: relative;
+    left: 500x;
+    top: 300px;
+    width: 250px;
+    height: 37px;
+    padding: 10px;
+    background-color: var(--main_bg-colour);
+    color: var(--main_text-colour);
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana;
+}
