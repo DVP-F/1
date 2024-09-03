@@ -1,47 +1,52 @@
 :root{
     --main_bg-colour: #000;
     --main_text-colour: #fff;
+    --inv : #0000;
+}
+@font-face {
+    font-family: 'Catalish Huntera Reg';
+    src: url(../assets/fonts/catalish_huntera/Catalish\ Huntera.otf) format('opentype'), url(../assets/fonts/catalish_huntera/Catalish\ Huntera.ttf) format('truetype'), url(../assets/fonts/catalish_huntera/Catalish\ Huntera.woff) format('woff'), url(../assets/fonts/catalish_huntera/Catalish\ Huntera.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'AmongUs Regular';
+    src: url(../assets/fonts/amongus-regular/AmongUs-Regular.eot) format('embedded-opentype'), url(../assets/fonts/amongus-regular/AmongUs-Regular.otf) format('opentype'), url(../assets/fonts/amongus-regular/AmongUs-Regular.ttf) format('truetype'), url(../assets/fonts/amongus-regular/AmongUs-Regular.woff) format('woff'), url(../assets/fonts/amongus-regular/AmongUs-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Comic Serif';
+    src: url(../assets/fonts/comic-serif/comic-serif.otf) format('opentype'), url(../assets/fonts/comic-serif/comic-serif.ttf) format('truetype'), url(../assets/fonts/comic-serif/comic-serif.woff) format('woff'), url(../assets/fonts/comic-serif/comic-serif.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Catalish Huntera Italic';
+    src: url(../assets/fonts/catalish_huntera/Catalish\ Huntera\ Italic.otf) format('opentype'), url(../assets/fonts/catalish_huntera/Catalish\ Huntera\ Italic.ttf) format('truetype'), url(../assets/fonts/catalish_huntera/Catalish\ Huntera\ Italic.woff) format('woff'), url(../assets/fonts/catalish_huntera/Catalish\ Huntera\ Italic.woff2) format('woff2');
 }
 * {
     margin: 0px; padding: 0px;
     background: var(--main_bg-colour);
 }
-
-/* Styling the first parallax's height, width and background color */
 .parallax-1 {
     width: 100%;
     height: 600px;
     background: url('../assets/media/neon1.jpg') fixed;
     background-size: 100% 100%;
 }
-
-/* Styling the title of first parallax */
 .parallax-1 h2 {
     margin: auto;
     position: relative;
-    left: 500x;
     top: 300px;
-    width: 250px;
     height: 32px;
-    padding: 10px;
-    background-color: var(--main_bg-colour);
+    background: var(--inv); 
     color: var(--main_text-colour);
     text-align: center;
 }
-
-/* Styling the second parallax's height, width and background color */
 .parallax-2 {
     width: 100%;
     height: 600px;
     background: url('../assets/media/neon2.jpg') fixed;
     background-size: 100% auto;
 }
-
-/* Styling the title of second parallax */
 .parallax-2 h2 {
     margin: auto;
     position: relative;
-    left: 500x;
     top: 300px;
     width: 250px;
     height: 37px;
