@@ -1,8 +1,11 @@
+/*! I dont know if this works yet i cant check rn */
+
 :root{
-    --main_bg-colour: #000;
+    --main_bg-colour: #000015;
     --main_text-colour: #fff;
     --inv : #0000;
-    --tshad_base: 2px 2px 1px #000, 2px -2px 1px #000, -2px -2px 1px #000, -2px 2px 1px #000;
+    --tshad_1: 2px 2px 1px #000, 2px -2px 1px #000, -2px -2px 1px #000, -2px 2px 1px #000;
+    --tshad_2: 2px 2px 1px #fff, 2px -2px 1px #fff, -2px -2px 1px #fff, -2px 2px 1px #fff;
 }
 @font-face {
     font-family: 'Catalish Huntera Reg';
@@ -39,7 +42,7 @@
     color: var(--main_text-colour);
     text-align: center;
     font-family: Comic Serif;
-    text-shadow: var(--tshad_base);
+    text-shadow: var(--tshad_1);
 }
 .parallax-2 {
     width: 100%;
@@ -57,58 +60,23 @@
     text-align: center;
     font-size: 30px;
     font-family: AmongUs Regular;
-    text-shadow: var(--tshad_base);
+    text-shadow: var(--tshad_1);
 }
 span#navbar{
-	flex-direction: column;
+	flex-direction: row;
 	display: flex;
 	justify-content: center;
 	align-content: space-around;
     font-family: Catalish Huntera Reg;
     margin: 11px 12px 11px 12px;
-	color: #000; text-shadow: 2px 2px #fff, 2px -2px #fff, -2px 2px #fff, -2px -2px #fff;
+	color: #000; text-shadow: var(--tshad_2);
 	background: var(--main_bg-colour);
+    position: fixed;
+    top: 0; right: 0; left: 0;
 }
-
-/*
-
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+#modeTog{
     border: none;
-    cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-}
-
-.dropdown {
+    background: var(--inv);
     position: relative;
-    display: inline-block;
+    right: 5px; top: auto;
 }
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-</style>
-*/
