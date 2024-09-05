@@ -1,7 +1,6 @@
-/*! I dont know if this works yet i cant check rn */
-
 :root{
-    --main_bg-colour: #000015;
+    --main_bg-colour: #000;
+    --main_nav-text-colour: #000;
     --main_text-colour: #fff;
     --inv : #0000;
     --tshad_1: 2px 2px 1px #000, 2px -2px 1px #000, -2px -2px 1px #000, -2px 2px 1px #000;
@@ -65,18 +64,23 @@
 span#navbar{
 	flex-direction: row;
 	display: flex;
-	justify-content: center;
-	align-content: space-around;
+	justify-content: left;
+	align-content: space-between;
     font-family: Catalish Huntera Reg;
-    margin: 11px 12px 11px 12px;
-	color: #000; text-shadow: var(--tshad_2);
+    padding: 11px 12px 11px 12px;
+	color: var(--main_nav-text-colour); text-shadow: var(--tshad_2);
 	background: var(--main_bg-colour);
-    position: fixed;
+    position: fixed; width: 100%;
     top: 0; right: 0; left: 0;
+}
+#navbar a{
+    color: inherit;
 }
 #modeTog{
     border: none;
     background: var(--inv);
-    position: relative;
+    position: fixed;
     right: 5px; top: auto;
+    color: var(--main_text-colour);
+    font-weight: bold;
 }
